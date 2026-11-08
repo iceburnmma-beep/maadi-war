@@ -80,6 +80,11 @@ kbd{font-family:var(--body);font-size:12px;background:rgba(240,217,168,.14);padd
 #strike{position:absolute;bottom:calc(var(--by) + 92px);right:var(--ex);background:var(--ember);color:#26120a;font-weight:800;padding:4px 10px;border-radius:3px;font-size:14px}
 #cross{position:absolute;left:50%;top:50%;width:0;height:0}
 #cross i{position:absolute;background:#fff;box-shadow:0 0 2px #000}
+#cross.lock i{background:#ff3326;box-shadow:0 0 4px #f00}
+#aimR{position:absolute;left:0;top:0;width:46px;height:46px;margin:-23px 0 0 -23px;border:2px solid rgba(255,60,40,.55);border-radius:50%;pointer-events:none;display:none;transition:width .12s,height .12s,margin .12s,border-color .12s}
+#aimR::after{content:'';position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px;border-radius:50%;background:#ff3326;box-shadow:0 0 4px #f00}
+#aimR.on{display:block}
+#aimR.lock{display:block;width:30px;height:30px;margin:-15px 0 0 -15px;border-color:#ff2a1a;box-shadow:0 0 10px rgba(255,0,0,.7)}
 #hit{position:absolute;left:50%;top:50%;width:26px;height:26px;margin:-13px;opacity:0;transform:rotate(45deg)}
 #hit i{position:absolute;background:#fff}
 #hit.head i{background:var(--danger)}
@@ -202,5 +207,5 @@ kbd{font-family:var(--body);font-size:12px;background:rgba(240,217,168,.14);padd
   <div id="boot"><div><div id="btxt">بيحمّل المعادي…</div><div style="font-size:12px;color:var(--ash);margin-top:6px">أول مرة بتاخد شوية، بعدها بتفتح أسرع</div><div id="bbar" style="width:220px;height:6px;background:rgba(240,217,168,.2);margin-top:12px"><i style="display:block;height:100%;width:0;background:var(--ember)"></i></div></div></div>
 </div>
 
-<script src="game.js?v=1794101078"></script>
+<script src="game.js?v=1794102020"></script>
 </body></html>
